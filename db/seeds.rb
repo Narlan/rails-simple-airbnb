@@ -8,7 +8,7 @@
 
 Flat.delete_all
 count = 0
-times = 500
+times = 100
 
 times.times do
   Flat.create!(
