@@ -1,0 +1,23 @@
+<div class="container">
+
+  <div class="title">
+    <h1>All our Flats</h1>
+  </div>
+
+  <div class="grid">
+
+  <% @flats.each do |flat| %>
+    <div class="card">
+      <h2><%= flat.name %></h2>
+      <p><%= flat.address %></p>
+      <div class="guests-and-price">
+        <p><%= flat.number_of_guests %></p>
+        <p><%= flat.price_per_night %></p>
+      </div>
+      <div class="info-bar"> <%= link_to "More info", flat_path(flat.id) %> </div>
+    </div>
+  <% end %>
+
+  </div>
+
+</div>
